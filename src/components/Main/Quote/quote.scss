@@ -1,0 +1,48 @@
+$color: #5f5c53;
+
+.quote {
+    background-image: url(../../../img/backWords.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 220px;
+    margin-bottom: 50px;
+    /* @include flex_center(); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    &_text {
+        text-align: center;
+        font-size: 32px;
+        color: $color;
+        height: 40px;
+    }
+    &__text {
+        text-align: center;
+        font-size: 18px;
+        color: $color;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .quote{
+        margin-bottom: 30px;
+        background-image: none;
+        &_text{
+            margin: 0 20px;
+            height: 80px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .quote{
+        margin-bottom: 20px;
+        background-image: none;
+        &_text{
+            margin: 0 20px;
+            height: 120px;
+        }
+    }
+}

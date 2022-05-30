@@ -1,0 +1,135 @@
+.about {
+  background-image: url(../../img/backAbout.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 100px 0;
+}
+
+.test {
+  height: 330px;
+  margin-bottom: 100px;
+  background-image: url(../../img/backTest.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.test_info {
+  height: 150px;
+  max-width: 350px;
+  border-left: 1px solid black;
+}
+
+.test_info_text {
+  border-top: 1px solid black;
+  margin: 30px 0 0 80px;
+  padding-top: 50px;
+  font-size: 20px;
+  color: #5F5C53;
+}
+
+.btn_test {
+  background-image: url(../../img/buttonTest.png);
+  background-size: cover;
+  width: 250px;
+  height: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #5F5C53;
+  font-size: 24px;
+  text-decoration: none;
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+@-webkit-keyframes example {
+  0% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes example {
+  0% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about {
+    background-image: none;
+    margin: 50px 0;
+  }
+  .test {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about {
+    background-image: none;
+    margin: 20px 0;
+  }
+  .test {
+    margin: 0px 20px 20px 20px;
+    /*         margin-left: 10px;
+        margin-bottom: 20px; */
+    background-image: none;
+  }
+  .test_info_text {
+    margin: 30px 0 0 30px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

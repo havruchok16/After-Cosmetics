@@ -1,0 +1,80 @@
+.btn_sumbit {
+  cursor: pointer;
+  margin: 40px 0;
+  margin-left: 26%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 60px;
+  text-align: center;
+  border: 1px solid #5F5C53;
+  padding: 0 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-size: 18px;
+  color: #5F5C53;
+  background-color: transparent;
+  background-image: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(50%, transparent), color-stop(50%, #5F5C53), to(#5F5C53));
+  background-image: linear-gradient(to left, transparent, transparent 50%, #5F5C53 50%, #5F5C53);
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  -webkit-transition: all .25s ease-in;
+  transition: all .25s ease-in;
+}
+
+.btn_sumbit:hover {
+  background-position: 0 0;
+  color: white;
+}
+
+.quest {
+  font-size: 16px;
+  font-weight: 600;
+  color: #5F5C53;
+}
+
+.answer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+.answer input {
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.answer p {
+  font-size: 16px;
+  color: #5F5C53;
+}
+
+.result {
+  font-size: 16px;
+  line-height: 24px;
+  color: #5F5C53;
+}
+
+span {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 800px) {
+  .btn_sumbit {
+    margin-left: 0;
+  }
+}
+/*# sourceMappingURL=skintest.css.map */

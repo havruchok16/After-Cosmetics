@@ -1,0 +1,67 @@
+.nav_item {
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 10px 20px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav .logo {
+  font-size: 28px;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 600;
+  margin: 0 20px;
+}
+
+.rhm-rn-navigation__nav, .rhm-rn-navigation__button {
+  background-color: #f7f6f2;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rhm-rn-navigation__icon {
+  margin-right: 50px;
+}
+
+ul li {
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .nav .logo {
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .nav_item {
+    font-size: 20px;
+  }
+  .nav .logo {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav_item {
+    font-size: 24px;
+  }
+  .nav .logo {
+    font-size: 40px;
+  }
+}
+/*# sourceMappingURL=header.css.map */

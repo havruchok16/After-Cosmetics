@@ -1,0 +1,183 @@
+@charset "UTF-8";
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 280px;
+}
+
+.navbar_item {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #5F5C53;
+  margin: 10px 0;
+}
+
+.assistant .assistant_container {
+  background-image: url(../../img/backAssistant.png);
+  padding: 0 0 50px 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.assistant .bread_сrumbs {
+  padding: 0 130px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.assistant .bread_сrumbs .fisrt_part {
+  margin: 0;
+  font-family: "Dosis";
+  font-size: 60px;
+  color: black;
+  text-decoration: none;
+}
+
+.assistant .bread_сrumbs .second_part {
+  font-size: 80px;
+  line-height: 0;
+  margin: 0 30px;
+  color: #5F5C53;
+}
+
+.assistant .bread_сrumbs .third_part {
+  margin: 16px 0 0 0;
+  font-size: 25px;
+  font-weight: 500;
+  color: #5F5C53;
+}
+
+.section {
+  text-align: left;
+  font-size: 22px;
+  font-weight: 600;
+  color: #5F5C53;
+  margin-bottom: 40px;
+}
+
+.section_container {
+  max-width: 670px;
+  margin-left: 280px;
+}
+
+.section__container p {
+  line-height: 24px;
+}
+
+@media screen and (max-width: 1300px) {
+  .assistant .assistant_container {
+    padding: 0 50px 50px 100px;
+  }
+  .assistant .bread_сrumbs {
+    padding: 0 50px 0 100px;
+  }
+  .section_container {
+    margin-left: 150px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .assistant .assistant_container {
+    padding: 0 50px 50px 80px;
+  }
+  .assistant .bread_сrumbs {
+    padding: 0 50px 0 80px;
+  }
+  .section_container {
+    max-width: 550px;
+    margin-left: 80px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .assistant .assistant_container {
+    padding: 0 50px 50px 80px;
+  }
+  .section_container {
+    max-width: 450px;
+    margin-left: 50px;
+  }
+  .expander {
+    max-width: 450px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .assistant .assistant_container {
+    padding: 0 30px 30px 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-bottom: 50px;
+  }
+  .assistant .bread_сrumbs {
+    padding: 0 30px 0 100px;
+  }
+  .section_container {
+    max-width: 400px;
+    margin-left: 0;
+  }
+  .section_container .section {
+    margin-bottom: 20px;
+  }
+  .section_container .btn_sumbit {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .assistant .assistant_container {
+    padding: 0 30px 20px 40px;
+  }
+  .assistant .bread_сrumbs {
+    padding: 0 30px 0 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .assistant .assistant_container {
+    padding: 0 10px 20px 10px;
+  }
+  .assistant .bread_сrumbs {
+    padding: 0 10px 0 10px;
+  }
+}
+/*# sourceMappingURL=assistant.css.map */

@@ -1,0 +1,81 @@
+$color: #5f5c53;
+
+.ingridients {
+    margin-bottom: 100px;
+    &_container {
+        height: 650px;
+        background-image: url(../../../img/ingridients.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        &_item {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            div {
+                cursor: grab;
+                width: 300px;
+                color: $color;
+                transition: 0.5s;
+                &:hover{
+                    transform: scale(1.1);
+                    transition: 0.5s;
+                    color: black;
+                }
+            }
+            .ingr {
+                font-size: 22px;
+                font-weight: 600;
+                margin: 0;
+                
+            }
+            .description {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .ingridients{
+        &_container {
+            height: 550px;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .ingridients{
+        margin-bottom: 60px;
+        &_container {
+            background-image: none;
+            height: 450px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .ingridients{
+        margin-bottom: 40px;
+        &_container {
+            height: 350px;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .ingridients{
+        margin-bottom: 30px;
+        &_container {
+            height: 550px;
+            &_item {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+            }
+        }
+    }
+}

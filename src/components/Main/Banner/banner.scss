@@ -1,0 +1,144 @@
+$color: #5F5C53;
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Montserrat+Alternates:ital,wght@0,100;0,400;1,500&display=swap');
+
+
+.banner {
+    background-image: url(../../../img/banner.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &_ {
+        width: 480px;
+        height: 380px;
+        padding: 80px 0 0 130px;
+        &info {
+            width: 430px;
+            height: 210px;
+            padding-left: 100px;
+            display: flex;
+            flex-direction: column;
+            border-left: 1px solid black;
+            &_company {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                border-bottom: 1px solid black;
+                font-size: 20px;
+                p {
+                    margin: 0;
+                    margin-bottom: 6px;
+                }
+            }
+            &_about {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding-top: 130px;
+                .after_rotate {
+                    margin: 0;
+                    width: 20px;
+                    height: 60px;
+                    transform: rotate(-90deg);
+                    font-family: 'Dosis', sans-serif;
+                    font-size: 60px;
+                }
+                p {
+                    margin: 0;
+                    width: 310px;
+                    font-size: 18px;
+                    color: $color;
+                    font-size: 16px;
+                    text-align: right;
+                }
+            }
+        }
+    }
+    &_social {
+        display: flex;
+        flex-direction: row;
+        margin-top: 250px;
+        height: 16px;
+        transform: rotate(-90deg);
+        &_item {
+            margin: 0 30px;
+            font-size: 14px;
+            color: $color;
+            cursor: pointer;
+            transition: 0.5s;
+            &:hover {
+                color: black;
+                transition: 0.5s;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .banner{
+        height: 450px;
+        &_{
+            padding: 50px 0 0 100px;
+            &info {
+                width: 380px;
+                height: 186px;
+                padding-left: 70px;
+            }
+        }
+        &_social{
+            margin-top: 220px;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .banner{
+        height: 380px;
+        &_{
+            &info {
+                padding-left: 70px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .banner{
+        background-image: none;
+        &_social{
+            margin-top: 200px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .banner{
+        height: 330px;
+        justify-content: center;
+        margin: 20px 40px;
+        &_{
+            padding: 10px 50px;
+        }
+        &_social{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .banner{
+        &_{
+            padding: 10px;
+            &info {
+                padding-left: 40px;
+                width: 300px;
+            }
+        }
+    }
+    .btn{
+        margin-left: 20px;
+    }
+}

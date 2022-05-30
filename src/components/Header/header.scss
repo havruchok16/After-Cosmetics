@@ -1,0 +1,67 @@
+$bodyColor: #f7f6f2;
+
+.nav {
+    &_item {
+        color: black;
+        font-size: 18px;
+        font-weight: 400;
+        margin: 10px 20px;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo{
+        font-size: 28px;
+        font-family: 'Dosis', sans-serif;
+        font-weight: 600;
+        margin: 0 20px;
+    }
+}
+
+.rhm-rn-navigation__nav, .rhm-rn-navigation__button{
+    background-color: $bodyColor;
+    justify-content: center;
+}
+
+.rhm-rn-navigation__icon{
+    margin-right: 50px;
+}
+
+ul{
+    li{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .nav {
+        .logo{
+            font-size: 34px;
+
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .nav {
+        &_item {
+            font-size: 20px;
+        }
+        .logo{
+            font-size: 36px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .nav {
+        &_item {
+            font-size: 24px;
+        }
+        .logo{
+            font-size: 40px;
+        }
+    }
+}

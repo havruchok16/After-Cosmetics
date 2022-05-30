@@ -1,0 +1,68 @@
+.cosm {
+  margin: 0;
+  padding: 50px 0 100px 0;
+}
+
+.cosm_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cosm_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 300px;
+  height: 350px;
+  margin: 30px 50px;
+}
+
+.cosm_item .cosm_img {
+  width: 300px;
+  height: 300px;
+}
+
+.cosm_item .cosm_name {
+  font-size: 18px;
+  margin: 10px 0 6px 0;
+}
+
+.cosm_item .cosm_info {
+  font-size: 16px;
+  margin: 0;
+  color: #5F5C53;
+}
+
+@media screen and (max-width: 800px) {
+  .cosm {
+    padding: 30px 0 70px 0;
+  }
+  .cosm .cosm_item {
+    margin: 20px 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cosm {
+    padding: 0 0 30px 0;
+  }
+  .cosm .cosm_item {
+    margin: 16px 50px;
+  }
+}
+/*# sourceMappingURL=cosm.css.map */

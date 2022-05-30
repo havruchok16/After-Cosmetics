@@ -1,0 +1,80 @@
+body {
+  background-color: #f7f6f2;
+  margin: 0;
+}
+
+.header_img {
+  height: 200px;
+  background-image: url(../img/header.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1200px) {
+  .header_img {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header_img {
+    height: 124px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header_img {
+    height: 110px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header_img {
+    height: 50px;
+    background-image: none;
+  }
+}
+
+.section_name {
+  font-family: "Montserrat Alternates";
+  font-size: 22px;
+  color: #5f5c53;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.btn, .btn_container_about {
+  margin-top: 80px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 70px;
+  border: 1px solid #5f5c53;
+  padding: 0 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 18px;
+  text-decoration: none;
+  color: #5f5c53;
+  background-image: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(50%, transparent), color-stop(50%, #5f5c53), to(#5f5c53));
+  background-image: linear-gradient(to left, transparent, transparent 50%, #5f5c53 50%, #5f5c53);
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+
+.btn:hover, .btn_container_about:hover {
+  background-position: 0 0;
+  color: white;
+}
+
+.btn_container_about {
+  margin: 0;
+}
+/*# sourceMappingURL=style.css.map */

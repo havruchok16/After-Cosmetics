@@ -1,0 +1,107 @@
+.ingridients {
+  margin-bottom: 100px;
+}
+
+.ingridients_container {
+  height: 650px;
+  background-image: url(../../../img/ingridients.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.ingridients_container_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.ingridients_container_item div {
+  cursor: -webkit-grab;
+  cursor: grab;
+  width: 300px;
+  color: #5f5c53;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.ingridients_container_item div:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: black;
+}
+
+.ingridients_container_item .ingr {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.ingridients_container_item .description {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1200px) {
+  .ingridients_container {
+    height: 550px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .ingridients {
+    margin-bottom: 60px;
+  }
+  .ingridients_container {
+    background-image: none;
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .ingridients {
+    margin-bottom: 40px;
+  }
+  .ingridients_container {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .ingridients {
+    margin-bottom: 30px;
+  }
+  .ingridients_container {
+    height: 550px;
+  }
+  .ingridients_container_item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+/*# sourceMappingURL=ingrid.css.map */

@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis&family=Montserrat+Alternates:ital,wght@0,100;0,400;1,500&display=swap");
+.banner {
+  background-image: url(../../../img/banner.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.banner_ {
+  width: 480px;
+  height: 380px;
+  padding: 80px 0 0 130px;
+}
+
+.banner_info {
+  width: 430px;
+  height: 210px;
+  padding-left: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-left: 1px solid black;
+}
+
+.banner_info_company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid black;
+  font-size: 20px;
+}
+
+.banner_info_company p {
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+.banner_info_about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 130px;
+}
+
+.banner_info_about .after_rotate {
+  margin: 0;
+  width: 20px;
+  height: 60px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  font-family: 'Dosis', sans-serif;
+  font-size: 60px;
+}
+
+.banner_info_about p {
+  margin: 0;
+  width: 310px;
+  font-size: 18px;
+  color: #5F5C53;
+  font-size: 16px;
+  text-align: right;
+}
+
+.banner_social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 250px;
+  height: 16px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.banner_social_item {
+  margin: 0 30px;
+  font-size: 14px;
+  color: #5F5C53;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.banner_social_item:hover {
+  color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 1200px) {
+  .banner {
+    height: 450px;
+  }
+  .banner_ {
+    padding: 50px 0 0 100px;
+  }
+  .banner_info {
+    width: 380px;
+    height: 186px;
+    padding-left: 70px;
+  }
+  .banner_social {
+    margin-top: 220px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .banner {
+    height: 380px;
+  }
+  .banner_info {
+    padding-left: 70px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .banner {
+    background-image: none;
+  }
+  .banner_social {
+    margin-top: 200px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .banner {
+    height: 330px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 20px 40px;
+  }
+  .banner_ {
+    padding: 10px 50px;
+  }
+  .banner_social {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .banner_ {
+    padding: 10px;
+  }
+  .banner_info {
+    padding-left: 40px;
+    width: 300px;
+  }
+  .btn {
+    margin-left: 20px;
+  }
+}
+/*# sourceMappingURL=banner.css.map */

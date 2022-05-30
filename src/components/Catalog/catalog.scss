@@ -1,0 +1,74 @@
+$color: #5F5C53;
+
+
+.catalog{
+    background-image: url(../../img/backAssistant.png);
+}
+
+
+.bread_сrumbs{
+    padding: 0 130px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    .fisrt_part{
+        margin: 0;
+        font-family: "Dosis";
+        font-size: 60px;
+        color: black;
+        text-decoration: none;
+    }
+    .second_part{
+        font-size: 80px;
+        line-height: 0;
+        margin: 0 30px;
+        color: $color;
+    }
+    .third_part{
+        margin: 16px 0 0 0;
+        font-size: 25px;
+        font-weight: 500;
+        color: $color;
+    }
+}
+
+.filter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 130px;
+    margin-top: 20px;
+    .btn_filter{
+        background-color: transparent;
+        width: max-content;
+        margin: 10px 20px 0 0;
+        height: 40px;
+        background-color: transparent;
+        border: 1px solid $color;
+        font-size: 18px;
+        padding: 0 20px;
+        color: $color
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .filter{
+        margin-left: 60px;
+    }
+    .bread_сrumbs{
+        padding: 0;
+        padding-left: 60px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .filter{
+        margin-left: 20px;
+    }
+    .bread_сrumbs{
+        padding: 0;
+        padding-left: 20px;
+    }
+}

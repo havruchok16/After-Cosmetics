@@ -1,0 +1,91 @@
+$bodyColor: #f7f6f2;
+$color: #5f5c53;
+
+@mixin flex_center() {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: $bodyColor;
+    margin: 0;
+}
+
+.header_img{
+    height: 200px;
+    background-image: url(../img/header.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1200px) {
+    .header_img{
+       height: 150px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .header_img{
+       height: 124px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .header_img{
+       height: 110px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header_img{
+        height: 50px;
+        background-image: none;
+    }
+}
+
+
+
+.section_name {
+    font-family: "Montserrat Alternates";
+    font-size: 22px;
+    color: $color;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.btn {
+    margin-top: 80px;
+    width: max-content;
+    height: 70px;
+    border: 1px solid $color;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    color: $color;
+
+    background-image: linear-gradient(
+        to left,
+        transparent,
+        transparent 50%,
+        $color 50%,
+        $color
+    );
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all 0.25s ease-in;
+
+    &:hover {
+        background-position: 0 0;
+        color: white;
+    }
+}
+
+.btn_container_about {
+    @extend .btn;
+    margin: 0;
+}

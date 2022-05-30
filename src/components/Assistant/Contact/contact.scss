@@ -1,0 +1,80 @@
+$color: #5F5C53;
+
+.btn_sumbit{
+    cursor: pointer;
+    margin: 40px 0;
+    margin-left: 26%;
+    width: max-content;
+    height: 60px;
+    text-align: center;
+    border: 1px solid $color;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: $color;
+    background-color: transparent;
+    background-image: linear-gradient(to left,transparent,transparent 50%, $color 50%, $color);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .25s ease-in;
+    &:hover {
+        background-position: 0 0;
+        color: white;
+    }
+}
+
+.contact{
+    max-width: 550px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    color: $color;
+    &_header{
+        margin: 0;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    &_info{
+        margin: 0;
+        font-size: 14px;
+    }
+    &_button{
+        cursor: pointer;
+        margin-left: 30px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    input{
+        margin-bottom: 20px;
+        max-width: 300px;
+        height: 40px;
+        background-color: transparent;
+        border: 1px solid $color;
+        font-size: 14px;
+        padding: 0 20px;
+    }
+    .btn_contact{
+        @extend .btn_sumbit;
+        margin: 20px 0 0 0;
+    }
+}
+
+.errors{
+    color: $color;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 2px;
+}
+
+.swal2-styled.swal2-confirm {
+    background-color: #5F5C53;
+    border-radius: 0px;
+    padding: 10px 40px;
+}
+
+/* .swal2-confirm, .swal2-styled{
+    background-color: #5F5C53;
+} */

@@ -1,0 +1,97 @@
+.btn_sumbit, .contact .btn_contact {
+  cursor: pointer;
+  margin: 40px 0;
+  margin-left: 26%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 60px;
+  text-align: center;
+  border: 1px solid #5F5C53;
+  padding: 0 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-size: 18px;
+  color: #5F5C53;
+  background-color: transparent;
+  background-image: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(50%, transparent), color-stop(50%, #5F5C53), to(#5F5C53));
+  background-image: linear-gradient(to left, transparent, transparent 50%, #5F5C53 50%, #5F5C53);
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  -webkit-transition: all .25s ease-in;
+  transition: all .25s ease-in;
+}
+
+.btn_sumbit:hover, .contact .btn_contact:hover {
+  background-position: 0 0;
+  color: white;
+}
+
+.contact {
+  max-width: 550px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #5F5C53;
+}
+
+.contact_header {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.contact_info {
+  margin: 0;
+  font-size: 14px;
+}
+
+.contact_button {
+  cursor: pointer;
+  margin-left: 30px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.contact input {
+  margin-bottom: 20px;
+  max-width: 300px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid #5F5C53;
+  font-size: 14px;
+  padding: 0 20px;
+}
+
+.contact .btn_contact {
+  margin: 20px 0 0 0;
+}
+
+.errors {
+  color: #5F5C53;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 2px;
+}
+
+.swal2-styled.swal2-confirm {
+  background-color: #5F5C53;
+  border-radius: 0px;
+  padding: 10px 40px;
+}
+
+/* .swal2-confirm, .swal2-styled{
+    background-color: #5F5C53;
+} */
+/*# sourceMappingURL=contact.css.map */

@@ -1,0 +1,22 @@
+.error{
+    background-image: url(../../img/backAssistant.png);
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    &_anim{
+        height: 300px;
+    }
+    &_text{
+        text-align: center;
+        font-size: 20px;
+        margin: 0;
+        color: #5F5C53;
+    }
+}
+
+.btn_error{
+    margin-top: 50px;
+}
